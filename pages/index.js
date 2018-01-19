@@ -1,20 +1,11 @@
-import Image from '../components/image'
-import title from '../models/title'
+import TitleBar from '../components/TitleBar'
+import App from '../components/App'
 
 export default () => <section>
   <header>
-    <h1>
-      {title}
-    </h1>
+    <TitleBar />
   </header>
   <main>
-    <Image
-      src='/static/waterfalls.jpg'
-      alt='Waterfalls'
-      style={{
-        width: '50%',
-        height: '50%'
-      }}
-    />
+    <App />
   </main>
 </section>

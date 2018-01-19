@@ -1,2 +1,2 @@
-const title = 'Test Web Thumbnail'
+const title = 'QR Code Generator'
 export default title
