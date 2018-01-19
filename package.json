@@ -9,8 +9,9 @@
     "test": "jest --coverage",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "deploy": "jest --coverage && next build && now"
+    "start": "node index.js",
+    "deploy": "jest --coverage && next build && now",
+    "heroku-postbuild": "next build"
   },
   "repository": {
     "type": "git",
