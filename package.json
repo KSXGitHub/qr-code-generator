@@ -10,7 +10,7 @@
     "build": "env NODE_ENV=production next build",
     "start": "next start",
     "deploy": "jest --coverage && next build && now",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "yarn run build"
   },
   "repository": {
     "type": "git",
