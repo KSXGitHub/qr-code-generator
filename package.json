@@ -8,7 +8,7 @@
     "test": "jest --coverage",
     "dev": "next",
     "build": "env NODE_ENV=production next build",
-    "start": "next start",
+    "start": "node index.js",
     "deploy": "jest --coverage && next build && now",
     "heroku-postbuild": "yarn run build"
   },
