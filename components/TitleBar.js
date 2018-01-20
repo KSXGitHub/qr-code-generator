@@ -6,7 +6,7 @@ import title from '../models/title'
 export default () => <div>
   <AppBar position='static'>
     <Toolbar>
-      <Typography color='inherit'>
+      <Typography type='title' color='inherit'>
         {title}
       </Typography>
     </Toolbar>
