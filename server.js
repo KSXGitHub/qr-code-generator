@@ -1,9 +1,8 @@
 'use strict'
-const path = require('path')
 const {env} = require('process')
 const {createServer} = require('http')
 const next = require('next')
-const app = next(path.resolve(__dirname, 'pages'))
+const app = next(__dirname)
 const handle = app.getRequestHandler()
 const port = Number(env.PORT || 5000)
 

@@ -1,13 +1,13 @@
 {
   "version": "0.0.0",
   "description": "",
-  "main": "pages/index.js",
+  "main": "index.js",
   "bin": "index.js",
   "scripts": {
     "main": "node index.js",
     "test": "jest --coverage",
     "dev": "next",
-    "build": "next build",
+    "build": "env NODE_ENV=production next build",
     "start": "next start",
     "deploy": "jest --coverage && next build && now",
     "heroku-postbuild": "next build"
