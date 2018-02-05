@@ -1,6 +1,6 @@
-import AppBar from 'material-ui/AppBar'
-import Toolbar from 'material-ui/Toolbar'
-import Typography from 'material-ui/Typography'
+import AppBar from 'material-ui-next/AppBar'
+import Toolbar from 'material-ui-next/Toolbar'
+import Typography from 'material-ui-next/Typography'
 import title from '../models/title'
 
 export default () => <div>
