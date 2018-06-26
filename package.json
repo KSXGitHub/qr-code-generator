@@ -10,7 +10,9 @@
     "build": "env NODE_ENV=production next build",
     "start": "node index.js",
     "deploy": "jest --coverage && next build && now",
-    "heroku-postbuild": "yarn run build"
+    "heroku-postbuild": "yarn run build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,8 @@
     "qrcode.react": "^0.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-qr-svg": "^2.1.0"
+    "react-qr-svg": "^2.1.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
@@ -43,5 +46,6 @@
   },
   "engines": {
     "node": ">= 8.9.0"
-  }
+  },
+  "snyk": true
 }
